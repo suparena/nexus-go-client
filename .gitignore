@@ -1,0 +1,8 @@
+/bin/
+/dist/
+*.log
+*.test
+*.exe
+*.out
+.DS_Store
+.idea
