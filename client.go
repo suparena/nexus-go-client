@@ -10,8 +10,9 @@ import (
 
 // Event represents a single event to be sent to the Nexus pipeline.
 type Event struct {
-	Type string                 `json:"type"`
-	Data map[string]interface{} `json:"data"`
+	Type      string                 `json:"type"`
+	Timestamp string                 `json:"timestamp,omitempty"`
+	Data      map[string]interface{} `json:"data"`
 }
 
 // Client handles communication with the Nexus event endpoint.
